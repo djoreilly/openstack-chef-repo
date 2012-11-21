@@ -32,20 +32,16 @@ cookbook 'mysql-openstack',
   :git => 'https://github.com/mattray/mysql-openstack.git'
 
 cookbook 'keystone',
-  :git => 'https://github.com/mattray/keystone.git',
-  :ref => '2012.1.0'
+  :git => 'https://github.com/cloudbau/chef-keystone.git'
 
 cookbook 'glance',
-  :git => 'https://github.com/mattray/glance.git',
-  :ref => '2012.1.0'
+  :git => 'https://github.com/cloudbau/chef-glance.git'
 
 cookbook 'nova',
-  :git => 'https://github.com/mattray/nova.git',
-  :ref => '2012.1.0'
+  :git => 'https://github.com/cloudbau/chef-nova.git'
 
 cookbook 'horizon',
-  :git => 'https://github.com/mattray/horizon.git',
-  :ref => '2012.1.0'
+  :git => 'https://github.com/cloudbau/chef-horizon.git'
 
 # cookbook 'swift',
 #   :git => 'https://github.com/mattray/swift.git',

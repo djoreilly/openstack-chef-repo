@@ -29,53 +29,43 @@ SITE
     yum (1.0.0)
 
 GIT
-  remote: https://github.com/mattray/glance.git
-  ref: 2012.1.0
-  sha: 8d6411d0d1fbb7265935a56cedf40300e8a58dc4
+  remote: https://github.com/cloudbau/chef-glance.git
+  ref: master
+  sha: 60e58b0e0e15c0f01cf25e16a8821bb1ac573f70
   specs:
-    glance (2012.1.0)
+    glance (5.0.0)
       database (>= 0.0.0)
       keystone (>= 0.0.0)
       mysql (>= 0.0.0)
       osops-utils (>= 0.0.0)
 
 GIT
-  remote: https://github.com/mattray/horizon.git
-  ref: 2012.1.0
-  sha: c0039f7b06e5a318614dc9fe754ab9a6e0e58cb8
+  remote: https://github.com/cloudbau/chef-horizon.git
+  ref: master
+  sha: eebe7e7d90f479db5a54fa3e9475439e3c5fcc69
   specs:
-    horizon (2012.1.0)
+    horizon (5.0.0)
       apache2 (>= 0.0.0)
       database (>= 0.0.0)
       mysql (>= 0.0.0)
       osops-utils (>= 0.0.0)
 
 GIT
-  remote: https://github.com/mattray/keystone.git
-  ref: 2012.1.0
-  sha: f97b7fae31397fc212b9e84c768317ab4347e319
-  specs:
-    keystone (2012.1.0)
-      database (>= 0.0.0)
-      mysql (>= 0.0.0)
-      osops-utils (>= 0.0.0)
-
-GIT
-  remote: https://github.com/mattray/mysql-openstack.git
+  remote: https://github.com/cloudbau/chef-keystone.git
   ref: master
-  sha: 6a47b59b55bc8297775e0b81db4e38a6bfce3aab
+  sha: 435aa805d2ed1a12459998255d5858bcb98a7a3f
   specs:
-    mysql-openstack (1.0.4)
+    keystone (5.0.0)
       database (>= 0.0.0)
       mysql (>= 0.0.0)
       osops-utils (>= 0.0.0)
 
 GIT
-  remote: https://github.com/mattray/nova.git
-  ref: 2012.1.0
-  sha: 1a28ce95edd4181fbdd7e75b75ec82f9fe3be371
+  remote: https://github.com/cloudbau/chef-nova.git
+  ref: master
+  sha: 5318aa28f12b1a4e467fd47ccd05c8ceda7a4ec8
   specs:
-    nova (2012.1.0)
+    nova (5.0.0)
       apt (>= 0.0.0)
       database (>= 0.0.0)
       glance (>= 0.0.0)
@@ -87,6 +77,16 @@ GIT
       selinux (>= 0.0.0)
       sysctl (>= 0.0.0)
       yum (>= 0.0.0)
+
+GIT
+  remote: https://github.com/mattray/mysql-openstack.git
+  ref: master
+  sha: 6a47b59b55bc8297775e0b81db4e38a6bfce3aab
+  specs:
+    mysql-openstack (1.0.4)
+      database (>= 0.0.0)
+      mysql (>= 0.0.0)
+      osops-utils (>= 0.0.0)
 
 GIT
   remote: https://github.com/mattray/osops-utils.git
