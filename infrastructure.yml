@@ -38,13 +38,13 @@ cookbooks:
 - rabbitmq-openstack: #required by keystone
   - 1.0.4
 - keystone: #used by keystone role
-  - 2012.1.0
+  - 5.0.0
 - glance: #used by glance roles
-  - 2012.1.0
+  - 5.0.0
 - nova: #used by nova roles
-  - 2012.1.0
+  - 5.0.0
 - horizon: #used by horizon-server role
-  - 2012.1.0
+  - 5.0.0
 
 environments:
 - production:
