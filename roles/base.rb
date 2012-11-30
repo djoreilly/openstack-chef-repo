@@ -3,7 +3,8 @@ description "Base role for a server"
 run_list(
   "recipe[apt]",
   "recipe[openssh]",
-  "recipe[ntp]"
+  "recipe[ntp]",
+  "recipe[osops-utils::packages]"
 )
 default_attributes(
   "ntp" => {

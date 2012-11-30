@@ -79,6 +79,15 @@ GIT
       yum (>= 0.0.0)
 
 GIT
+  remote: https://github.com/cloudbau/chef-osops-utils.git
+  ref: master
+  sha: 314b331f799d5525b3f3b81cfaa52340b5c39db6
+  specs:
+    osops-utils (1.0.6)
+      apt (>= 0.0.0)
+      yum (>= 0.0.0)
+
+GIT
   remote: https://github.com/mattray/mysql-openstack.git
   ref: master
   sha: 6a47b59b55bc8297775e0b81db4e38a6bfce3aab
@@ -87,15 +96,6 @@ GIT
       database (>= 0.0.0)
       mysql (>= 0.0.0)
       osops-utils (>= 0.0.0)
-
-GIT
-  remote: https://github.com/mattray/osops-utils.git
-  ref: master
-  sha: 706d8296f1debd718f15faa4676e823aadb2671f
-  specs:
-    osops-utils (1.0.6)
-      apt (>= 0.0.0)
-      yum (>= 0.0.0)
 
 GIT
   remote: https://github.com/mattray/rabbitmq-openstack.git

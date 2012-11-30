@@ -1,23 +1,17 @@
-raise "You must set the ORGNAME environment variable" if ENV['ORGNAME'].nil?
 current_dir = File.dirname(__FILE__)
-user = ENV['OPSCODE_USER'] || ENV['USER']
+
+load "#{current_dir}/../config.rb"
+
 log_level                :info
 log_location             STDOUT
-node_name                user
-client_key               "#{current_dir}/#{user}.pem"
-validation_client_name   "#{ENV['ORGNAME']}-validator"
-validation_key           "#{current_dir}/#{ENV['ORGNAME']}-validator.pem"
-chef_server_url          "https://api.opscode.com/organizations/#{ENV['ORGNAME']}"
+node_name                ENV['USER']
+client_key               "#{current_dir}/../#{ENV['USER']}.pem"
+validation_client_name   "#{ChefConfig::chef_organization}-validator"
+#validation_client_name   ""
+
+validation_key           "#{current_dir}/../#{ChefConfig::chef_organization}-validator.pem"
+chef_server_url          ChefConfig::chef_url
 cache_type               'BasicFile'
-cache_options( :path => "#{current_dir}/checksums" )
+cache_options( :path =>  "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
-
-role_path                ["#{current_dir}/../roles"]
-
-# all your credentials are belong to us
-
-# OpenStack
-knife[:openstack_username] = ENV['OS_USERNAME']
-knife[:openstack_password] = ENV['OS_PASSWORD']
-knife[:openstack_auth_url] = ENV['OS_AUTH_URL']
-knife[:openstack_tenant]   = ENV['OS_TENANT']
+knife[:environment] ||=  "production"

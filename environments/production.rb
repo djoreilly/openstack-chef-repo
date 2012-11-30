@@ -15,26 +15,27 @@ override_attributes(
     "root_network_acl" => "%"
   },
   "osops_networks" => {
-    "public" => "10.0.111.0/24",
+    "public" => "10.0.112.0/24",
     "management" => "192.168.10.0/24",
-    "nova" => "10.0.111.0/24"
+    "nova" => "10.0.112.0/24"
   },
   "nova" => {
     "libvirt" => {
       "virt_type" => "qemu"
     },
     "network" => {
-      "fixed_range" => "192.168.100.0/24",
-      "public_interface" => "eth1"
+      "fixed_range" => "10.0.111.0/24",
+      "public_interface" => "eth3",
+      "floating" => { "ipv4_cidr" => "10.0.112.128/25" }
     },
     "networks" => [
       {
         "label" => "public",
-        "ipv4_cidr" => "192.168.100.0/24",
+        "ipv4_cidr" => "10.0.111.0/24",
         "num_networks" => "1",
         "network_size" => "255",
         "bridge" => "br100",
-        "bridge_dev" => "eth1",
+        "bridge_dev" => "eth2",
         "dns1" => "8.8.8.8",
         "dns2" => "8.8.4.4"
       }

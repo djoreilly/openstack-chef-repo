@@ -23,7 +23,7 @@ cookbook 'sysctl',
   :git => 'https://github.com/mattray/sysctl.git'
 
 cookbook 'osops-utils',
-  :git => 'https://github.com/mattray/osops-utils.git'
+  :git => 'https://github.com/cloudbau/chef-osops-utils.git'
 
 cookbook 'rabbitmq-openstack',
   :git => 'https://github.com/mattray/rabbitmq-openstack.git'
