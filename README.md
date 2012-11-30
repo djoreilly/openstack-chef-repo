@@ -27,3 +27,5 @@ You need the following software to get this running:
 [hostedchef]: http://www.opscode.com/hosted-chef/
 [ks]: http://fnichol.github.com/knife-server/
 [opsoschef]: http://www.opscode.com/solutions/chef-openstack/
+[lib]: https://github.com/applicationsonline/librarian
+[sw]: http://wiki.opscode.com/display/chef/Spiceweasel
