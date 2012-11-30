@@ -11,6 +11,5 @@ run_list(
   "role[nova-api-ec2]",
   "role[nova-api-os-compute]",
   "role[nova-volume]",
-  "role[nova-vncproxy]",
   "role[horizon-server]"
 )
