@@ -18,9 +18,9 @@ Vagrant::Config.run do |config|
     ctrl.vm.network :hostonly, "10.0.111.10", :netmask => "255.255.255.0"
     ctrl.vm.network :hostonly, "10.0.112.10", :netmask => "255.255.255.0"
     ctrl.vm.provision :chef_client do |chef|
-      chef.chef_server_url = chef_url
-      chef.validation_client_name = "#{ChefConfig::chef_organization}-validator"
-      chef.validation_key_path = "#{ChefConfig::chef_organization}-validator.pem"
+      chef.chef_server_url = ChefConfig.chef_url
+      chef.validation_client_name = "#{ChefConfig.chef_organization}-validator"
+      chef.validation_key_path = "#{ChefConfig.chef_organization}-validator.pem"
       chef.run_list = "role[single-controller]"
       chef.environment = "production"
     end
@@ -36,9 +36,9 @@ Vagrant::Config.run do |config|
       compute.vm.network :hostonly, "10.0.111.#{10+i}", :netmask => "255.255.255.0"
       compute.vm.network :hostonly, "10.0.112.#{10+i}", :netmask => "255.255.255.0"
       compute.vm.provision :chef_client do |chef|
-        chef.chef_server_url = chef_url
-        chef.validation_client_name = "#{ChefConfig::chef_organization}-validator"
-        chef.validation_key_path = "#{ChefConfig::chef_organization}-validator.pem"
+        chef.chef_server_url = ChefConfig.chef_url
+        chef.validation_client_name = "#{ChefConfig.chef_organization}-validator"
+        chef.validation_key_path = "#{ChefConfig.chef_organization}-validator.pem"
         chef.run_list = "role[single-compute]"
         chef.environment = "production"
       end

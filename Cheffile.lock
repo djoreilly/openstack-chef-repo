@@ -42,7 +42,7 @@ GIT
 GIT
   remote: https://github.com/cloudbau/chef-horizon.git
   ref: master
-  sha: eebe7e7d90f479db5a54fa3e9475439e3c5fcc69
+  sha: e3e9b43b52b18aaeca32ef640ddd3537595c34fc
   specs:
     horizon (5.0.0)
       apache2 (>= 0.0.0)
@@ -53,7 +53,7 @@ GIT
 GIT
   remote: https://github.com/cloudbau/chef-keystone.git
   ref: master
-  sha: 435aa805d2ed1a12459998255d5858bcb98a7a3f
+  sha: 2ad90f9c307fd7f33be5e53145b876575b4bbaf0
   specs:
     keystone (5.0.0)
       database (>= 0.0.0)
@@ -63,7 +63,7 @@ GIT
 GIT
   remote: https://github.com/cloudbau/chef-nova.git
   ref: master
-  sha: 5318aa28f12b1a4e467fd47ccd05c8ceda7a4ec8
+  sha: c63edfd62dd5629a12e06e04084c1a04ee33d31c
   specs:
     nova (5.0.0)
       apt (>= 0.0.0)
@@ -81,7 +81,7 @@ GIT
 GIT
   remote: https://github.com/cloudbau/chef-osops-utils.git
   ref: master
-  sha: 314b331f799d5525b3f3b81cfaa52340b5c39db6
+  sha: c34d73980ba135c21d3076e49f2a28431700208e
   specs:
     osops-utils (1.0.6)
       apt (>= 0.0.0)

@@ -14,10 +14,10 @@ You need the following software to get this running:
 
 ## Installation steps
 
-1. Checkout this repo `git checkout https://www.github.com/cloudbau/openstack-chef-repo.get`
+1. Checkout this repo `git clone https://www.github.com/cloudbau/openstack-chef-repo.get`
 2. `librarian-chef update`
-3. `spiceweasel infrastructure.yml`
-4. Edit `config.rb` and add your Chef info
+3. Edit `config.rb` and add your Chef info
+4. `spiceweasel infrastructure.yml | sh`
 5. `vagrant up`
 
 
