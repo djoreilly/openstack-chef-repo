@@ -35,7 +35,7 @@ cookbook 'keystone',
   :git => 'https://github.com/cloudbau/chef-keystone.git'
 
 cookbook 'glance',
-  :git => 'https://github.com/cloudbau/chef-glance.git'
+  :git => 'https://github.com/djoreilly/chef-glance.git'
 
 cookbook 'nova',
   :git => 'https://github.com/cloudbau/chef-nova.git'
