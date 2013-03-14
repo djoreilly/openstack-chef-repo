@@ -10,7 +10,7 @@ You need the following software to get this running:
  - [git][git]
  - [A Hosted Chef Account][hostedchef] (You can use your own chef server, of course. Installing a chef server e.g. via [knife-server][ks] is out of scope of this tutorial, though)
  - [librarian-chef][lib] - `gem install librarian`
- - [spiceweasel][sw] - `gem install spiceweasel`
+ - [spiceweasel][sw] - `gem install spiceweasel -v 1.2.0`
 
 ## Installation steps
 
