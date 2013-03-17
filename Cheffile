@@ -38,7 +38,7 @@ cookbook 'glance',
   :git => 'https://github.com/djoreilly/chef-glance.git'
 
 cookbook 'nova',
-  :git => 'https://github.com/cloudbau/chef-nova.git'
+  :git => 'https://github.com/djoreilly/chef-nova.git'
 
 cookbook 'horizon',
   :git => 'https://github.com/cloudbau/chef-horizon.git'
