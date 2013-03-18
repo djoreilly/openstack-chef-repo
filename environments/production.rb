@@ -4,10 +4,9 @@ description "Defines the network and database settings you're going to use with 
 override_attributes(
   "glance" => {
     "image_upload" => true,
-    "images" => ["cirros","precise"],
+    "images" => ["cirros"],
     "image" => {
-      "cirros" => "https://launchpad.net/cirros/trunk/0.3.0/+download/cirros-0.3.0-x86_64-disk.img",
-      "precise"=> "https://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64.tar.gz"
+      "cirros" => "https://launchpad.net/cirros/trunk/0.3.0/+download/cirros-0.3.0-x86_64-disk.img"
     }
   },
   "mysql" => {
