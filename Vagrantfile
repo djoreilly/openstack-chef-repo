@@ -10,6 +10,9 @@ load "config.rb"
 
 Vagrant::Config.run do |config|
 
+  config.vm.provision :shell,
+    :inline => "sed -i 's/us.archive.ubuntu.com/mirror.sov.uk.goscomb.net/g' /etc/apt/sources.list"
+
   config.vm.define :controller do |ctrl|
     ctrl.vm.customize ["modifyvm", :id, "--memory", 2048]
     ctrl.vm.box = "precise64"
