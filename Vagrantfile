@@ -17,6 +17,7 @@ Vagrant::Config.run do |config|
     ctrl.vm.network :hostonly, "192.168.10.10", :netmask => "255.255.255.0"
     ctrl.vm.network :hostonly, "10.0.111.10", :netmask => "255.255.255.0"
     ctrl.vm.network :hostonly, "10.0.112.10", :netmask => "255.255.255.0"
+    ctrl.vm.provision :shell, :path => "nova_volumes.sh"
     ctrl.vm.provision :chef_client do |chef|
       chef.chef_server_url = ChefConfig.chef_url
       chef.validation_client_name = "#{ChefConfig.chef_organization}-validator"
